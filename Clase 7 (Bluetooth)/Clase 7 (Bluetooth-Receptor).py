@@ -1,7 +1,7 @@
 from machine import Pin,UART 
 import time
 
-uart = UART(9600)
+uart = UART(0,9600)
 
 led_green = Pin(12,Pin.OUT)
 led_yellow  = Pin(4,Pin.OUT)

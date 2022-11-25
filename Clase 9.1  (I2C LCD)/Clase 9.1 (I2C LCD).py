@@ -8,9 +8,7 @@ I2C_NUM_ROWS = 2
 I2C_NUM_COLS = 16
 # Raspberry Pi Pico
 i2c = I2C(0, sda=Pin(0), scl=Pin(1), freq=400000)
-#Esp8266
-#i2c = I2C(sda=Pin(4), scl=Pin(5), freq=100000)
-#Configuración LCD
+
 lcd = I2cLcd(i2c, I2C_ADDR, I2C_NUM_ROWS, I2C_NUM_COLS)
 
 feliz = [0x00,
